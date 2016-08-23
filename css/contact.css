@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+						/*header头部样式*/
+.header{ background:#77213b; height:100px;}
+.header .inner{ width:1140px; margin:0 auto; }
+.header .inner h1 a{ line-height:100px; height:100px; color:#fff; font-family: 'Poiret One', cursive; float:left; font-size:38px; font-weight:normal;}
+.header .inner a:hover{ color:#d4642e; text-shadow:0 0 8px #fff,0 0 12px #fff;}
+.header .inner  ul{ float:right;}
+.header .inner  ul li{ float:left; margin-top:42px;}
+.header .inner  ul li:hover span{ color:#d4642e; text-shadow:0 0 2px #fff,0 0 4px #fff;}
+.header .inner  ul li a{ padding:0 10px;}
+.header .inner  ul li span{ color:#fff; font-size:20px;font-family: 'Poiret One', cursive;}
+
+
+						/*main 内容区域的样式*/
+.main{ background:url(../images/footer-bg.jpg); height:1200px;}
+.main .inner{ width:1128px; margin:0 auto;}
+.main .inner h2{ text-align:center; color:#94304f; font-size:26px; line-height:114px; height:114px; padding-top:15px; text-transform:uppercase;}
+.main .inner a img{ margin-bottom:65px;}
+.form1{ margin-left:-12px;}
+.text1{ float:left;margin-left:12px; margin-bottom:20px;}
+.text1 p{ font-size:16px;color:#94304f; margin-bottom:14px; }
+.text1 input{  background:none; border:1px solid #666; width:366px; height:48px; display:inline-block;}
+.text1 input:hover{ border:1px solid #da9269;}
+.area{ margin-left:12px;margin-bottom:17px;}
+.area p{ font-size:16px;color:#94304f; margin-bottom:14px; }
+.area textarea{ width:1126px; height:316px; display:block; resize:none; background:none; outline:none;  border:1px solid #666; }
+.area textarea:hover{ border:1px solid #da9269; }
+.area h4{ padding:14px 22px; background:#94304f;color:#FFF; width:36px; text-align:center;margin-top:10px; transition:all 1s;}
+
+
+				/*content动画样式*/
+.pic{ width:1140px; overflow:hidden;}
+.mainList_donghua { animation:banner_donghua 8s  linear infinite;width:400%;}
+.mainList_donghua  img{  font-size:0; display:inline; width:25%;}
+
+/* single的逐帧动画样式 */
+@keyframes banner_donghua{
+	0%,25%{ margin-left:0;}
+	55%,65%{ margin-left:-100%;}
+	95%,100%{ margin-left:-200%;}
+	}
+
+						/*footer 页脚区域的样式*/
+.footer{ height:80px; background:#77213b;}
+.footer .inner{width:1110px; margin:0 auto;}
+.footer .inner p{ text-align:center; line-height:80px; color:#fff;}
+.footer .inner span{ color:#cf6600;}
+
+
+
+

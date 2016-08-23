@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+						/*header头部样式*/
+.header{ background:#77213b; height:100px;}
+.header .inner{ width:1128px; margin:0 auto; }
+.header .inner h1 a{ line-height:100px; height:100px; color:#fff; font-family: 'Poiret One', cursive; float:left; font-size:38px; font-weight:normal;}
+.header .inner a:hover{ color:#d4642e; text-shadow:0 0 8px #fff,0 0 12px #fff;}
+.header .inner  ul{ float:right;}
+.header .inner  ul li{ float:left; margin-top:42px;}
+.header .inner  ul li:hover span{ color:#d4642e; text-shadow:0 0 2px #fff,0 0 4px #fff;}
+.header .inner  ul li a{ padding:0 10px;}
+.header .inner  ul li span{ color:#fff; font-size:20px;font-family: 'Poiret One', cursive;}
+
+						/*banner图片样式*/
+.banner_donghua{ animation:banner_donghua 10s  linear infinite;width:400%;}
+.banner_donghua img{ height:100%; font-size:0; display:inline; width:25%;}
+
+						/*main 内容区域的样式*/
+.main{ background:url(../images/footer-bg.jpg); height:1260px;}
+.main .inner{ width:1128px; margin:0 auto;}
+.main .inner h2{ text-align:center; color:#94304f; font-size:26px; line-height:114px; height:114px; padding-top:15px; text-transform:uppercase;}
+.main .inner h2:hover,.main .inner p:hover{ color:#F96;}
+.main .inner p{ text-align:center; line-height:30px; color:#55555a; font-size:14px;}
+.mainList { float:left; margin-left:-30px;}
+.mainList ul li{ margin-left:30px; width:350px; height:248px; float:left; padding:2px; border:1px solid #666; margin-bottom:30px;}
+.mainList ul li img{ width:100%;}
+
+/* mainListLeft六个图片的动画样式 */
+.mainList  ul li{ position:relative; overflow:hidden;}
+.mainList  ul li:before{content:""; width:350px;height:350px;position: absolute; background:#81060f; top:100%;left:0%;;border:1px solid #fff;opacity:0; transform:translate(-0%,-100%);transition:0.5s ; font-size:30px; }
+.mainList  ul li:hover:before{width:0; height:0;opacity:0.9;}
+.mainList  ul li:after{content:"I Love You";position:absolute;font:44px/24px arial;width:100%;text-align:center;top:50%;left:50%;transform:translate(-50%,-50%)  rotateY(180deg);color:#81060f;transition:all 0.8s;opacity:0;}
+.mainList  ul li:hover:after{transform:translate(-50%,-50%) rotateY(360deg); opacity: 1;}
+						/*footer 页脚区域的样式*/
+.footer{ height:80px; background:#77213b;}
+.footer .inner{width:1110px; margin:0 auto;}
+.footer .inner p{ text-align:center; line-height:80px; color:#fff;}
+.footer .inner span{ color:#cf6600;}
+
+
+/* banner的逐帧动画样式 */
+@keyframes banner_donghua{
+	0%,25%{ margin-left:0;}
+	55%,65%{ margin-left:-100%;}
+	95%,100%{ margin-left:-200%;}
+	}

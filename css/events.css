@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+						/*header头部样式*/
+.header{ background:#77213b; height:100px;}
+.header .inner{ width:1128px; margin:0 auto; }
+.header .inner h1 a{ line-height:100px; height:100px; color:#fff; font-family: 'Poiret One', cursive; float:left; font-size:38px; font-weight:normal;}
+.header .inner a:hover{ color:#d4642e; text-shadow:0 0 8px #fff,0 0 12px #fff;}
+.header .inner  ul{ float:right;}
+.header .inner  ul li{ float:left; margin-top:42px;}
+.header .inner  ul li:hover span{ color:#d4642e; text-shadow:0 0 2px #fff,0 0 4px #fff;}
+.header .inner  ul li a{ padding:0 10px;}
+.header .inner  ul li span{ color:#fff; font-size:20px;font-family: 'Poiret One', cursive;}
+
+						/*main 内容区域的样式*/
+.main{ background:url(../images/footer-bg.jpg); height:2180px;}
+.main .inner{ width:1100px; margin:0 auto;}
+.main .inner h2{ text-align:center; color:#94304f; font-size:26px; line-height:114px; height:114px; padding-top:15px; text-transform:uppercase;}
+.mainListLeft { float:left; margin-right:30px; margin-bottom:42px;}
+.mainListLeft img{transition:all 1s; }
+.mainListLeft img:hover{transform:scale(1.07); }
+.text { float:left; width:620px; margin-bottom:42px;}
+.text h3{ line-height:72px; color:#000007; height:72px; text-transform:uppercase;}
+.text span{ color:#94304f; font-size:50px;}
+.text p{ line-height:26px; color:#555555; font-size:14px; }
+.text p:hover{ color:#d9680a; }
+.text h4{ line-height:46px; color:#141d1d; text-transform:uppercase;}
+
+
+
+						/*footer 页脚区域的样式*/
+.footer{ height:80px; background:#77213b;}
+.footer .inner{width:1110px; margin:0 auto;}
+.footer .inner p{ text-align:center; line-height:80px; color:#fff;}
+.footer .inner span{ color:#cf6600;}
+
